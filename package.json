@@ -32,6 +32,6 @@
     "gulp",
     "jade"
   ],
-  "author": "@hwclass, @aekirgil",
+  "author": "@hwclass",
   "license": "MIT"
 }
