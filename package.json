@@ -25,15 +25,12 @@
     "url": "https://hwclass@bitbucket.org/hwclass/allaboutgreen.git"
   },
   "keywords": [
-    "allaboutgreen",
-    "green",
-    "waves",
-    "wave",
     "angular",
     "requirejs",
     "bower",
     "sass",
-    "gulp"
+    "gulp",
+    "jade"
   ],
   "author": "@hwclass, @aekirgil",
   "license": "MIT"
