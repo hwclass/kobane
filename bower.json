@@ -2,7 +2,6 @@
   "name": "Kobane",
   "description": "A project workflow using Gulp, Bower, Require, Angular, Jade and Sass.",
   "version": "0.1.0",
-  "directory" : "app/libs",
   "ignore": [
     "**/.*",
     "bower_components"
