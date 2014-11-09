@@ -33,3 +33,5 @@ npm-debug.log
 .sass-cache/*
 dist/*
 
+app/libs/*
+
