@@ -1,25 +1,25 @@
 // Requirements
 var gulp = require('gulp'),
-browserSync = require('browser-sync'),
-clean = require('gulp-clean'),
-sass = require('gulp-ruby-sass'),
-minifyCSS = require('gulp-minify-css'),
-jade = require('gulp-jade'),
-htmlmin = require('gulp-htmlmin'),
-uglify = require('gulp-uglify'),
-runSequence = require('run-sequence'),
-glob = require('glob'),
-uncss = require('gulp-uncss');
+		browserSync = require('browser-sync'),
+		clean = require('gulp-clean'),
+		sass = require('gulp-ruby-sass'),
+		minifyCSS = require('gulp-minify-css'),
+		jade = require('gulp-jade'),
+		htmlmin = require('gulp-htmlmin'),
+		uglify = require('gulp-uglify'),
+		runSequence = require('run-sequence'),
+		glob = require('glob'),
+		uncss = require('gulp-uncss');
 
 // Defines path to sass
-var cssRootForSite = 'app/css/site/';
-var cssRootForDist = 'dist/css/site/';
-var cssRootForAdmin = 'app/css/admin/';
-var sassRootForApp = 'app/sass/site/';
-var sassRootForAdmin = 'app/sass/admin/';
-var htmlRootForSite = 'app/partials/html/';
-var indexRootForDist = 'dist/';
-var partialRootForDist = 'dist/partials/html';
+var cssRootForSite = 'app/css/site/',
+		cssRootForDist = 'dist/css/site/',
+		cssRootForAdmin = 'app/css/admin/',
+		sassRootForApp = 'app/sass/site/',
+		sassRootForAdmin = 'app/sass/admin/',
+		htmlRootForSite = 'app/partials/html/',
+		indexRootForDist = 'dist/',
+		partialRootForDist = 'dist/partials/html';
 
 var reload = browserSync.reload;
 
@@ -39,7 +39,7 @@ var paths = {
 		bootstrapCSS : 'libs/bootstrap/dist/css/bootstrap.min.css',
 		text : 'libs/requirejs-text/text.js',
 		firebase : 'libs/firebase/firebase.js',
-		angularfire : 'libs/angularfire/dist/angularfire.min.js'  
+		angularfire : 'libs/angularfire/dist/angularfire.min.js'
 	},
 	styles: ['css/site/main.css', 'libs/bootstrap/dist/css/bootstrap.min.css'],
 	html: ['index.html'],
@@ -242,22 +242,22 @@ gulp.task('watch-sass-site', function(){
 	});
 
 	//Base SASS Files
-	gulp.watch(['app/sass/site/base/_common.scss', 
-				'app/sass/site/base/_reset.scss', 
-				'app/sass/site/base/_typography.scss', 
-				'app/sass/site/components/_buttons.scss', 
-				'app/sass/site/components/_dropdown.scss', 
-				'app/sass/site/helpers/_functions.scss', 
-				'app/sass/site/helpers/_helpers.scss', 
-				'app/sass/site/helpers/_mixins.scss', 
-				'app/sass/site/helpers/_variables.scss', 
-				'app/sass/site/layout/_footer.scss', 
-				'app/sass/site/helpers/_forms.scss', 
-				'app/sass/site/layout/_grid.scss', 
-				'app/sass/site/layout/_header.scss', 
-				'app/sass/site/helpers/_sidebar.scss', 
-				'app/sass/site/pages/_contact.scss', 
-				'app/sass/site/themes/_default.scss', 
+	gulp.watch(['app/sass/site/base/_common.scss',
+				'app/sass/site/base/_reset.scss',
+				'app/sass/site/base/_typography.scss',
+				'app/sass/site/components/_buttons.scss',
+				'app/sass/site/components/_dropdown.scss',
+				'app/sass/site/helpers/_functions.scss',
+				'app/sass/site/helpers/_helpers.scss',
+				'app/sass/site/helpers/_mixins.scss',
+				'app/sass/site/helpers/_variables.scss',
+				'app/sass/site/layout/_footer.scss',
+				'app/sass/site/helpers/_forms.scss',
+				'app/sass/site/layout/_grid.scss',
+				'app/sass/site/layout/_header.scss',
+				'app/sass/site/helpers/_sidebar.scss',
+				'app/sass/site/pages/_contact.scss',
+				'app/sass/site/themes/_default.scss',
 				'app/sass/site/pages/_bootstrap.scss'], function() {
 		gulp.run('sass-to-css-site');
 		gulp.run('minify-css-site');//use sequence
