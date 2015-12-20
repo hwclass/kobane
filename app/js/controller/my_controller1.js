@@ -9,6 +9,8 @@ define(function () {
 
   	$scope.locale = Config1Service.getLocale(Config1Service.getLang());
 
+    console.dir(Config1Service.firebase.url);
+
   	$scope.lang = Config1Service.getLang();
 
   	$scope.setStringMessagesIntoCurrentLocale = function () {

@@ -5,7 +5,7 @@ define(function () {
   return ['LocaleService', function (LocaleService) {
     return {
       firebase : {
-        url : 'https://xxx.firebaseio.com/'
+        url : 'https://allaboutgreen.firebaseio.com/'
       },
       getLang : function () {
       	return LocaleService.locales[0]['lang'];

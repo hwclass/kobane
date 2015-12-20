@@ -1,6 +1,5 @@
-'use strict';
-
 define(['angular'], function() {
+  'use strict';
   return angular.module('app', [
     'ngRoute',
     'app.configs',
